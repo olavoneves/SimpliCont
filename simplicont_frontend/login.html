@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styleLogin.css">
+    <title>Genesis Contábil</title>
+</head>
+<body>
+    <header class="container__cabecalho">
+        <img src="#" alt="Logo Genesis Contábil">
+        <h1>Genesis Contábil</h1>
+    </header>
+
+    <main class="container__login">
+        <section class="login">
+            <h3>Login</h3>
+            <form action="#" id="formulario">
+                <span id="erro" class="erro"></span>
+
+                <input type="text" name="user" id="user" placeholder="Digite seu CPF ou CNPJ"> <br>
+                <input type="password" name="password" id="password" placeholder="••••••••" minlength="8" maxlength="8"> <br>
+                <div class="ajustar__campo">
+                    <label for="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">Lembrar
+                    </label>
+                    <a href="#">Esqueceu a senha?</a> <br>
+                </div>
+                <button class="botao__entrar" type="submit">Entrar</button>
+            </form>
+            <footer>
+                <p>&copy;2025 Genesis Contábil. Todos os direitos reservados.</p>
+            </footer>
+        </section>
+    </main>
+
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/mostrarSenha.js"></script>
+</body>
+</html>
