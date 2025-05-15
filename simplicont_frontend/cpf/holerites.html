@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styleHolerites.css">
+    <title>Genesis Contábil - Colaborador</title>
+</head>
+<body>
+    <aside>
+        <h2>Área do Colaborador</h2>
+        <hr>
+        <ul class="lista">
+            <li><a href="./holerites.html">Holerites</a></li>
+            <li><a href="./perfil.html">Perfil</a></li>
+            <hr>
+            <li><a href="../shared/reset_senha.html">Resetar Senha</a></li>
+            <li><a href="../login.html">Sair</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <h1>Meus Holerites</h1>
+        <section class="container__cima">
+            <div>
+                <h3>Demonstrativos de Pagamento</h3>
+                <select name="select__ano" id="select__ano">
+                    <option value="ultimo__mes">Último Mês</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="mes">Mês</th>
+                        <th class="data">Data</th>
+                        <th class="valor">Valor</th>
+                        <th class="acoes">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="pagamentos">
+                        <!--Adicionar com backend/javascript dependendo do periodo que o usuário escolher-->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

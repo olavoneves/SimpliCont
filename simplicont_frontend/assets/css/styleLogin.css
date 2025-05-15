@@ -80,18 +80,22 @@ form {
 input#user, #password {
     box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.089);
     border: none;
+    outline: none;
+    caret-color: white;
     background-color: var(--azulInput);
     width: 250px;
     height: 35px;
     margin: 10px auto;
     border-radius: 8px;
+    padding-left: 10px;
+    color: white;
 }
 
 #user {
     background-image: url('../imagens/user_svgrepo.com.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-position-x: 218px;
+    background-position-x: 225px;
     background-size: 10%;
 }
 
@@ -99,13 +103,11 @@ input#user, #password {
     background-image: url('../imagens/padlock_svgrepo.com.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-position-x: 218px;
+    background-position-x: 225px;
     background-size: 10%;
 }
 
-
 ::placeholder {
-    padding-left: 10px;
     color: white;
 }
 

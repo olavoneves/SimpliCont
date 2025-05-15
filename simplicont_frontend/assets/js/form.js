@@ -1,6 +1,6 @@
 const formulario = document.getElementById('formulario')
 
-formulario.addEventListener('submit', async function name(evento) {
+formulario.addEventListener('submit', async (evento) => {
     evento.preventDefault();
 
     const cpfOuCnpj = document.getElementById('user').value
@@ -23,9 +23,9 @@ formulario.addEventListener('submit', async function name(evento) {
         
         if (resposta.success) {
             if (cpfOuCnpj.replace(/\D/g, '').length === 11) {
-                window.location.href = '../cpf/holerites.html';
+                window.location.href = './cpf/holerites.html';
             } else {
-                window.location.href = '../cnpj/dashboard.html';
+                window.location.href = './cnpj/dashboard.html';
             }
         } else {
             alert(resposta.message || 'Credenciais inválidas');
